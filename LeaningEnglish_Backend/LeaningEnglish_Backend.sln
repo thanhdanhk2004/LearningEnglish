@@ -1,17 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35919.96 d17.13
+VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{F31C08EA-4C98-4E0F-9088-7FC931CC2BD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReserveProxy", "ReserveProxy\ReserveProxy.csproj", "{D87EEA69-9986-4EBF-8789-2475449674FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevesveProxy", "ReserveProxy\RevesveProxy.csproj", "{D87EEA69-9986-4EBF-8789-2475449674FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService", "UserService\UserService.csproj", "{A94D76FE-C2E5-48AD-8DC4-3D2D587A7C14}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashcardService", "FlashcardService\FlashcardService.csproj", "{1753F16D-D4CD-4096-8D92-E2D163A447ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Infrastructure", "UserService\UserService.Infrastructure\UserService.Infrastructure.csproj", "{47120D44-19BD-40D2-807E-593A9189DB7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Application", "UserService.Application\UserService.Application.csproj", "{D964E2B4-DDB1-4BDC-BB48-236408B2B4EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Domain", "UserService\UserService.Domain\UserService.Domain.csproj", "{CD7CD84A-64A0-4FF4-B0BD-760B53ED3A62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashcardService.Domain", "FlashcardService.Domain\FlashcardService.Domain.csproj", "{F7403125-C0EC-4E61-A195-1AF033336212}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashcardService.Application", "FlashcardService.Application\FlashcardService.Application.csproj", "{F17E5684-5129-411F-9D45-216D0EF6EFE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashcardService.Infrastructure", "FlashcardService.Infrastructure\FlashcardService.Infrastructure.csproj", "{210C4409-41BD-425E-94BB-B3BF027D9EC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +43,30 @@ Global
 		{1753F16D-D4CD-4096-8D92-E2D163A447ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1753F16D-D4CD-4096-8D92-E2D163A447ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1753F16D-D4CD-4096-8D92-E2D163A447ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47120D44-19BD-40D2-807E-593A9189DB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47120D44-19BD-40D2-807E-593A9189DB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47120D44-19BD-40D2-807E-593A9189DB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47120D44-19BD-40D2-807E-593A9189DB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D964E2B4-DDB1-4BDC-BB48-236408B2B4EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D964E2B4-DDB1-4BDC-BB48-236408B2B4EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D964E2B4-DDB1-4BDC-BB48-236408B2B4EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D964E2B4-DDB1-4BDC-BB48-236408B2B4EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD7CD84A-64A0-4FF4-B0BD-760B53ED3A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD7CD84A-64A0-4FF4-B0BD-760B53ED3A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD7CD84A-64A0-4FF4-B0BD-760B53ED3A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD7CD84A-64A0-4FF4-B0BD-760B53ED3A62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7403125-C0EC-4E61-A195-1AF033336212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7403125-C0EC-4E61-A195-1AF033336212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7403125-C0EC-4E61-A195-1AF033336212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7403125-C0EC-4E61-A195-1AF033336212}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F17E5684-5129-411F-9D45-216D0EF6EFE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17E5684-5129-411F-9D45-216D0EF6EFE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17E5684-5129-411F-9D45-216D0EF6EFE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17E5684-5129-411F-9D45-216D0EF6EFE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{210C4409-41BD-425E-94BB-B3BF027D9EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{210C4409-41BD-425E-94BB-B3BF027D9EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{210C4409-41BD-425E-94BB-B3BF027D9EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{210C4409-41BD-425E-94BB-B3BF027D9EC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
