@@ -1,0 +1,28 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/users", //downstream la tu api gateway den service
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5233
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/users", //upstream la tu client den api gateway
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET","PATCH"]
+    },
+    {
+      "DownstreamPathTemplate": "/api/flashcard", //downstream la tu api gateway den service
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5233
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/flashcard", //upstream la tu client den api gateway
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET", "PATCH"]
+    }
+  ]
+}

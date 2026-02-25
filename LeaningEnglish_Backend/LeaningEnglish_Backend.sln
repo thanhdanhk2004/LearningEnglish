@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{02EA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{F31C08EA-4C98-4E0F-9088-7FC931CC2BD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevesveProxy", "ReserveProxy\RevesveProxy.csproj", "{D87EEA69-9986-4EBF-8789-2475449674FC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService", "UserService\UserService.csproj", "{A94D76FE-C2E5-48AD-8DC4-3D2D587A7C14}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashcardService", "FlashcardService\FlashcardService.csproj", "{1753F16D-D4CD-4096-8D92-E2D163A447ED}"
@@ -25,16 +23,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashcardService.Applicatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashcardService.Infrastructure", "FlashcardService.Infrastructure\FlashcardService.Infrastructure.csproj", "{210C4409-41BD-425E-94BB-B3BF027D9EC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseProxy", "ReverseProxy\ReverseProxy.csproj", "{355679FE-6F81-4121-A671-F1DAF23BB9C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D87EEA69-9986-4EBF-8789-2475449674FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D87EEA69-9986-4EBF-8789-2475449674FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D87EEA69-9986-4EBF-8789-2475449674FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D87EEA69-9986-4EBF-8789-2475449674FC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A94D76FE-C2E5-48AD-8DC4-3D2D587A7C14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A94D76FE-C2E5-48AD-8DC4-3D2D587A7C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A94D76FE-C2E5-48AD-8DC4-3D2D587A7C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -67,14 +63,18 @@ Global
 		{210C4409-41BD-425E-94BB-B3BF027D9EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{210C4409-41BD-425E-94BB-B3BF027D9EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{210C4409-41BD-425E-94BB-B3BF027D9EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{355679FE-6F81-4121-A671-F1DAF23BB9C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{355679FE-6F81-4121-A671-F1DAF23BB9C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{355679FE-6F81-4121-A671-F1DAF23BB9C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{355679FE-6F81-4121-A671-F1DAF23BB9C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{D87EEA69-9986-4EBF-8789-2475449674FC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{A94D76FE-C2E5-48AD-8DC4-3D2D587A7C14} = {F31C08EA-4C98-4E0F-9088-7FC931CC2BD9}
 		{1753F16D-D4CD-4096-8D92-E2D163A447ED} = {F31C08EA-4C98-4E0F-9088-7FC931CC2BD9}
+		{355679FE-6F81-4121-A671-F1DAF23BB9C1} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8F4DC26C-D8B3-4720-83C1-934A15260478}
