@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/users", //downstream la tu api gateway den service
+      "DownstreamPathTemplate": "/users/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -9,20 +9,24 @@
           "Port": 5233
         }
       ],
-      "UpstreamPathTemplate": "/gateway/users", //upstream la tu client den api gateway
-      "UpstreamHttpMethod": [ "POST", "PUT", "GET","PATCH"]
+      "UpstreamPathTemplate": "/users/{everything}",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET", "PATCH", "DELETE"]
     },
     {
-      "DownstreamPathTemplate": "/api/flashcard", //downstream la tu api gateway den service
+      "DownstreamPathTemplate": "/flashcard/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5233
+          "Port": 5093
         }
       ],
-      "UpstreamPathTemplate": "/gateway/flashcard", //upstream la tu client den api gateway
-      "UpstreamHttpMethod": [ "POST", "PUT", "GET", "PATCH"]
+      "UpstreamPathTemplate": "/flashcard/{everything}",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET", "PATCH", "DELETE"]
     }
-  ]
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5252"
+  }
 }
+

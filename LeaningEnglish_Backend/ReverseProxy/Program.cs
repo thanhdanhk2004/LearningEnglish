@@ -8,5 +8,5 @@ builder.Services.AddOcelot();
 
 var app = builder.Build();
 
-await app.UseOcelot();
+app.UseOcelot().Wait();
 app.Run();

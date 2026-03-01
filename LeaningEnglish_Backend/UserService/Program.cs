@@ -1,4 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using UserService.Infrastructure.Context;
+using Microsoft.EntityFrameworkCore.Diagnostics;
+using UserService.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
+
+//Cau hinh PostgreSQL
+builder.Services.AddInfrastructure(builder.Configuration);
+
 
 // Add services to the container.
 
