@@ -1,13 +1,13 @@
-import header from "./component/layout/header";
-import footer from "./component/layout/footer";
+import Header from "./component/layout/header";
+import Footer from "./component/layout/footer";
 
-const mainlayout = ({children}) =>{
+const MainLayout = ({children}) =>{
     return(
         <>
-            <header />
+            <Header/>
             <main>{children}</main>
-            <footer />
+            <Footer/>
         </>
     )
 }
-export default mainlayout
+export default MainLayout
